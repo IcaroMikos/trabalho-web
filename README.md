@@ -12,7 +12,7 @@ Projeto front-end desenvolvido como requisito avaliativo para a disciplina de De
 * **Back-end / Mock API:** JSON Server
 * **Armazenamento de Sessão:** LocalStorage (para manter o login persistente)
 
-## Como rodar o projeto na sua máquina
+## Como rodar o projeto 
 
 Para que a aplicação funcione corretamente com todas as funcionalidades do CRUD, é necessário rodar o servidor da API e o servidor do React simultaneamente.
 
