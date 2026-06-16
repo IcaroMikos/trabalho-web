@@ -27,7 +27,7 @@ Em um terminal, rode o servidor na porta 3000 para habilitar os endpoints de ve�
 **3. Inicializar a Aplicação React**
 Mantenha o terminal anterior aberto, abra uma **nova aba de terminal** e rode o Vite:
 `npm run dev`
-Acesse a aplicação no navegador através de: `http://localhost:5173/`
+Acesse a aplicação no navegador através de: http://localhost:5173/
 
 ## Descrição e Estrutura da API REST
 
