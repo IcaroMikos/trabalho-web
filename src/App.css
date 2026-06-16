@@ -14,7 +14,7 @@ body {
 }
 
 /* ==========================================
-   HEADER / CABEÇALHO
+   HEADER 
    ========================================== */
 .site-header {
   background-color: #ffffff;
@@ -379,7 +379,7 @@ body {
   border-bottom: 1px solid #e2e8f0;
 }
 
-/* MODO DE VISUALIZACAO (NOVO) */
+/* MODO DE VISUALIZACAO */
 .profile-view-mode {
   display: flex;
   flex-direction: column;
