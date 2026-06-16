@@ -1,0 +1,839 @@
+/* ==========================================
+   RESET E CONFIGURAÇÕES DO SITE
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3f5f8;
+  color: #333;
+}
+
+/* ==========================================
+   HEADER / CABEÇALHO
+   ========================================== */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.site-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f32013;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.header-nav a:hover,
+.header-nav a.active {
+  color: #f32013;
+}
+
+.btn-anuncie-topo {
+  background-color: #f32013;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn-anuncie-topo:hover {
+  background-color: #d1170c;
+}
+
+.btn-login-header {
+  background: none;
+  border: 1px solid #f32013;
+  color: #f32013;
+  padding: 7px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 25px;
+  transition: all 0.2s;
+}
+
+.btn-login-header:hover {
+  background-color: #f32013;
+  color: white;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.menu-minha-conta {
+  cursor: pointer;
+  color: #1e293b;
+  transition: color 0.2s;
+}
+
+.menu-minha-conta:hover {
+  color: #f32013;
+  text-decoration: underline;
+}
+
+.btn-sair {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.btn-sair:hover {
+  color: #f32013;
+  text-decoration: underline;
+}
+
+/* ==========================================
+   BANNER DE BUSCA DESTAQUE
+   ========================================== */
+.search-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1600') no-repeat center center/cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.search-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  outline: none;
+  color: #333;
+}
+
+/* ==========================================
+   VITRINE DE ANÚNCIOS
+   ========================================== */
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.showcase-header {
+  margin-bottom: 20px;
+}
+
+.showcase-header h3 {
+  font-size: 20px;
+  color: #1e293b;
+}
+
+.vehicles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.vehicle-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #e2e8f0;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.car-brand {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.car-model {
+  font-size: 16px;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.car-details {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.car-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-top: auto;
+}
+
+/* ==========================================
+   TELA DE LOGIN / REGISTRO
+   ========================================== */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #f32013;
+}
+
+.btn-auth {
+  width: 100%;
+  padding: 12px;
+  background: #f32013;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.auth-card p {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.auth-card p:hover {
+  text-decoration: underline;
+  color: #f32013;
+}
+
+/* ==========================================
+   TELA DE MINHA CONTA E EDIÇÃO
+   ========================================== */
+.profile-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.profile-header {
+  margin-bottom: 25px;
+}
+
+.profile-header h2 {
+  font-size: 26px;
+  color: #1e293b;
+  border-left: 4px solid #f32013;
+  padding-left: 10px;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid #e2e8f0;
+}
+
+.profile-card h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* MODO DE VISUALIZACAO (NOVO) */
+.profile-view-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-line {
+  background-color: #f8fafc;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #475569;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-line strong {
+  color: #1e293b;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-edit-profile-toggle {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.btn-edit-profile-toggle:hover {
+  background: #2563eb;
+}
+
+/* FORMULÁRIO DE EDIÇÃO */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #f32013;
+}
+
+.profile-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-cancel-profile {
+  background: #e2e8f0;
+  color: #475569;
+  border: none;
+  padding: 12px;
+  flex: 1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-cancel-profile:hover {
+  background: #cbd5e1;
+}
+
+.btn-update-profile {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px;
+  flex: 1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-update-profile:hover {
+  background: #16a34a;
+}
+
+.no-ads-msg {
+  color: #64748b;
+  font-style: italic;
+}
+
+.my-ads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.my-ad-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background-color: #f8fafc;
+}
+
+.my-ad-img-box {
+  width: 80px;
+  height: 60px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-ad-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-img-small {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+.my-ad-details {
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+.my-ad-details h4 {
+  font-size: 15px;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.my-ad-details p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.my-ad-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit-ad {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.btn-edit-ad:hover {
+  background: #2563eb;
+}
+
+.btn-delete-ad {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.btn-delete-ad:hover {
+  background: #dc2626;
+}
+
+/* ==========================================
+   TELA DE ANUNCIAR / EDITAR FORMULÁRIO
+   ========================================== */
+.announce-container {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.announce-card {
+  background: white;
+  padding: 35px;
+  border-radius: 8px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.announce-card h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #1e293b;
+  border-left: 4px solid #f32013;
+  padding-left: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.announce-card input,
+.form-row-select select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.announce-card input:focus,
+.form-row-select select:focus {
+  border-color: #f32013;
+}
+
+.form-row-select {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.form-row-select label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.announce-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-cancel {
+  background: #e2e8f0;
+  color: #475569;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-submit-announce {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ==========================================
+   TELA DE DETALHES
+   ========================================== */
+.detail-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #f32013;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.detail-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.detail-image-box {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-image-large {
+  font-size: 24px;
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+.detail-header-block {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 15px;
+}
+
+.detail-brand {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.detail-model {
+  font-size: 32px;
+  color: #1e293b;
+  font-weight: 800;
+}
+
+.detail-body-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .detail-body-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-left-column h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.detail-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.spec-item {
+  background-color: #f8fafc;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  line-height: 1.4;
+}
+
+.action-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+}
+
+.detail-price {
+  font-size: 34px;
+  font-weight: 800;
+  color: #1e293b;
+  text-align: center;
+}
+
+.btn-contact {
+  width: 100%;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.btn-contact:hover {
+  background: #16a34a;
+}
+
+.contact-info-block {
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.contact-info-block h4 {
+  color: #16a34a;
+  margin-bottom: 12px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
