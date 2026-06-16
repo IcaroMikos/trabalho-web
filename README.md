@@ -1,6 +1,6 @@
 # 🏎️ GM IMPORTS - Plataforma de Venda de Veículos de Luxo
 
-Projeto front-end desenvolvido como requisito avaliativo para a disciplina de ReactJS. A aplicação consiste em um sistema de e-commerce e gerenciamento de anúncios de carros, focado no consumo de uma API REST simulada.
+Projeto front-end desenvolvido como requisito avaliativo para a disciplina de Desenvolvimento Web - Professor Adriano Ferrasa. A aplicação consiste em um sistema de e-commerce e gerenciamento de anúncios de carros, focado no consumo de uma API REST simulada.
 
 ## 👥 Equipe
 * Ícaro Mikos
