@@ -1,18 +1,18 @@
-# 🏎️ GM IMPORTS - Plataforma de Venda de Veículos de Luxo
+# GM IMPORTS - Plataforma de Venda de Veículos de Luxo
 
 Projeto front-end desenvolvido como requisito avaliativo para a disciplina de Desenvolvimento Web - Professor Adriano Ferrasa. A aplicação consiste em um sistema de e-commerce e gerenciamento de anúncios de carros, focado no consumo de uma API REST simulada.
 
-## 👥 Equipe
+## Equipe
 * Ícaro Mikos
 * Kauan Rodrigues
 
-## 🛠️ Tecnologias e Ferramentas Utilizadas
+## Tecnologias e Ferramentas Utilizadas
 * **Front-end:** ReactJS (criado com o template Vite)
 * **Estilização:** CSS3 Vanilla
 * **Back-end / Mock API:** JSON Server
 * **Armazenamento de Sessão:** LocalStorage (para manter o login persistente)
 
-## ⚙️ Como rodar o projeto na sua máquina
+## Como rodar o projeto na sua máquina
 
 Para que a aplicação funcione corretamente com todas as funcionalidades do CRUD, é necessário rodar o servidor da API e o servidor do React simultaneamente.
 
@@ -29,7 +29,7 @@ Mantenha o terminal anterior aberto, abra uma **nova aba de terminal** e rode o 
 `npm run dev`
 Acesse a aplicação no navegador através de: `http://localhost:5173/`
 
-## 📡 Descrição e Estrutura da API REST
+## Descrição e Estrutura da API REST
 
 O projeto consome uma Mock API através do `json-server`, simulando um banco de dados relacional. A comunicação é feita via `fetch` nativo do JavaScript.
 
