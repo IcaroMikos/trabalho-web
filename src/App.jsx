@@ -29,7 +29,7 @@ function App() {
   const [perfilNome, setPerfilNome] = useState('');
   const [perfilEmail, setPerfilEmail] = useState('');
   const [perfilSenha, setPerfilSenha] = useState('');
-  const [perfilConfirmarSenha, setPerfilConfirmarSenha] = useState(''); // NOVO: Confirmar senha
+  const [perfilConfirmarSenha, setPerfilConfirmarSenha] = useState(''); 
 
   // Estados dos Campos Fixos do Formulário (Usado para Criar e Editar Anúncios)
   const [marca, setMarca] = useState('');
@@ -113,14 +113,14 @@ function App() {
     setPerfilEmail(usuarioLogado.email);
     setPerfilSenha(usuarioLogado.senha);
     setPerfilConfirmarSenha(usuarioLogado.senha);
-    setIsEditandoPerfil(false); // Inicia sempre no modo de visualização
+    setIsEditandoPerfil(false); 
     setTelaAtiva('minha_conta');
   };
 
   const atualizarPerfil = async (e) => {
     e.preventDefault();
 
-    // Validação da senha
+    
     if (perfilSenha !== perfilConfirmarSenha) {
       alert("As senhas não coincidem! Verifique e tente novamente.");
       return;
@@ -137,7 +137,7 @@ function App() {
       setUsuarioLogado(usuarioAtualizado);
       localStorage.setItem('usuario_logado', JSON.stringify(usuarioAtualizado));
       alert("Dados da conta atualizados com sucesso!");
-      setIsEditandoPerfil(false); // Volta para o modo de visualização
+      setIsEditandoPerfil(false); 
     } catch (error) {
       alert("Erro ao atualizar perfil.");
     }
@@ -338,7 +338,7 @@ function App() {
                   <div className="profile-form-actions">
                     <button type="button" className="btn-cancel-profile" onClick={() => {
                       setIsEditandoPerfil(false);
-                      // Reseta os campos para o original caso o usuário cancele
+                      
                       setPerfilNome(usuarioLogado.nome);
                       setPerfilEmail(usuarioLogado.email);
                       setPerfilSenha(usuarioLogado.senha);
@@ -434,7 +434,7 @@ function App() {
         </main>
       )}
 
-      {/* 4. TELA DE DETALHES (Visual Webmotors) */}
+      {/* 4. TELA DE DETALHES */}
       {telaAtiva === 'detalhes' && veiculoSelecionado && (
         <main className="detail-container">
           <button className="btn-back" onClick={() => { setTelaAtiva('vitrine'); setMostrarContato(false); }}>
